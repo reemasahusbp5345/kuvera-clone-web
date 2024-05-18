@@ -11,7 +11,7 @@ function App() {
   const dispatch = useDispatch();
   const fetchStocks = async () => {
     try {
-      const response = await fetch("http://localhost:8000/stocks");
+      const response = await fetch("https://kuvera-clone-backend.vercel.app/stocks");
       const stockData = await response.json();
       setStocks(stockData);
     } catch (error) {
@@ -21,7 +21,7 @@ function App() {
 
   const fetchPortfolio = async () => {
     try {
-      const response = await fetch("http://localhost:8000/portfolio");
+      const response = await fetch("https://kuvera-clone-backend.vercel.app/portfolio");
       const portfolioData = await response.json();
       dispatch(getPortfolio(portfolioData));
     } catch (error) {

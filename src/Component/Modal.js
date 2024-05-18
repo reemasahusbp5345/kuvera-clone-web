@@ -22,7 +22,7 @@ const Modal = () => {
   };
   const addStockToPortfolio = async (id) => {
     try {
-      const response = await fetch("http://localhost:8000/portfolio", {
+      const response = await fetch("https://kuvera-clone-backend.vercel.app/portfolio", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -37,7 +37,7 @@ const Modal = () => {
   };
   const updatePortfolio = async (id, data) => {
     try {
-      await fetch(`http://localhost:8000/portfolio/${id}`, {
+      await fetch(`https://kuvera-clone-backend.vercel.app/portfolio/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

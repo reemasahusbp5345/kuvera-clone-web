@@ -10,7 +10,7 @@ const Portfolio = () => {
   };
   const handleDelete = async (id) => {
     try {
-      await fetch(`http://localhost:8000/portfolio/${id}`, {
+      await fetch(`https://kuvera-clone-backend.vercel.app/portfolio/${id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
